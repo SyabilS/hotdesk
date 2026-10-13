@@ -19,7 +19,7 @@ function NavIcon({ name }) {
 function Sidebar() {
   const nav = (links) => links.map(([to, label, icon]) => <NavLink key={to} to={to} end={to === '/'}><NavIcon name={icon}/>{label}</NavLink>);
   return <aside className="sidebar">
-    <NavLink className="brand" to="/"><img className="brand-mark" src="/logo.png" alt=""/><span><b>Hot Desk</b><small>workspace availability</small></span></NavLink>
+    <NavLink className="brand" to="/"><img className="brand-mark" src="/logo.png" alt=""/><span><b>Hot Desk Dashboard</b></span></NavLink>
     <nav aria-label="Application navigation">
       <p className="nav-label">Workspace</p>{nav(workspaceLinks)}
       <p className="nav-label">Administration</p>{nav(adminLinks)}
