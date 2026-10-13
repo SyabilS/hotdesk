@@ -23,9 +23,11 @@ default. Set `VITE_DEV_API_TARGET` to use another local API origin.
 
 ## Deployment
 
-Create a Vercel project with `webapp-frontend` as its root directory. Use the
-Vite preset, `npm run build`, and `dist` output. Set this environment variable
-to the HTTPS origin of the deployed API:
+The repository-root `vercel.json` builds and serves this application for a
+Vercel project linked at the repository root. Redeploy after pulling this
+change. Alternatively, configure `webapp-frontend` as Vercel's Root Directory,
+then use the Vite preset, `npm run build`, and `dist` output. Set this
+environment variable to the HTTPS origin of the deployed API:
 
 ```text
 VITE_API_BASE_URL=https://api.hotdesk.example.com

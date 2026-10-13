@@ -1,0 +1,10 @@
+{
+  "buildCommand": "npm --prefix webapp-frontend ci && npm --prefix webapp-frontend run build",
+  "outputDirectory": "webapp-frontend/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
